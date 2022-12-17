@@ -1,6 +1,6 @@
 {
  "name": "active-dev",
- "version": "1.0.0",
+ "version": "1.0.1",
  "description": "🛡️ Node.js app to get active developer badge on Discord",
  "main": "index.js",
  "type": "module",
