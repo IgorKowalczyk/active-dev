@@ -14,7 +14,10 @@
 
 
 ## 🔩 Installation
-- Clone this repository
+- Download the latest version of Node.js from [here](https://nodejs.org/en/download/) and install it
+- Clone this repository ([Download](https://github.com/IgorKowalczyk/active-dev/archive/refs/heads/main.zip))
+- Unzip the file
+- Open the folder in your terminal (In Windows you can use `win` + `R` and type `cmd` and then `cd` drag the folder to the terminal)
 - Install dependencies by running `npm install` or `pnpm install`
 - Go to [Discord Developer Portal](https://discord.com/developers/applications) and create a new application
 - Go to `Bot` tab and create a new bot, then copy the token
@@ -22,6 +25,7 @@
 - Check if you enabled Community in your server
 - Paste the token when asked and press enter
 - Follow the instructions in the CLI and you're done!
+
 
 ## ⁉️ Issues
 
