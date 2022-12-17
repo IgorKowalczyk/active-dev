@@ -1,4 +1,4 @@
-import { Client } from "discord.js";
+import { Client, EmbedBuilder } from "discord.js";
 import prompts from "prompts";
 import * as dotenv from "dotenv";
 import chalk from "chalk";
@@ -79,7 +79,10 @@ client.on("interactionCreate", async (interaction) => {
  if (!interaction.isCommand()) return;
 
  if (interaction.commandName === "active") {
+  // create embed
+  const embed = new EmbedBuilder().setAuthor({ name: "Discord Active Developer Badge", iconURL: "https://cdn.discordapp.com/emojis/1040325165512396830.webp?size=64&quality=lossless" }).setTitle("You have successfully ran the slash command!").setColor("#34DB98").setDescription("- Go to *https://discord.com/developers/active-developer* and claim your badge\n - Verification can take up to 24 hours, so wait patiently until you get your badge").setFooter({ text: "Made by Majonez.exe#2495", iconURL: "https://cdn.discordapp.com/emojis/1040325165512396830.webp?size=64&quality=lossless" });
+
   slashSpinner.succeed(chalk.bold("You have successfully ran the slash command! Follow the instructions in Discord Message that you received!"));
-  await interaction.reply("You have been awarded the Discord Active Developer Badge!");
+  await interaction.reply({ embeds: [embed], ephemeral: true });
  }
 });
