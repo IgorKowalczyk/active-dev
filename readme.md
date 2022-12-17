@@ -12,8 +12,8 @@
 
 ---
 
-
 ## 🔩 Installation
+
 - Download the latest version of Node.js from [here](https://nodejs.org/en/download/) and install it
 - Clone this repository ([Download](https://github.com/IgorKowalczyk/active-dev/archive/refs/heads/main.zip))
 - Unzip the file
@@ -25,7 +25,6 @@
 - Check if you enabled Community in your server
 - Paste the token when asked and press enter
 - Follow the instructions in the CLI and you're done!
-
 
 ## ⁉️ Issues
 
