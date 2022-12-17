@@ -12,7 +12,20 @@
 
 ---
 
-## 🔩 Installation
+## 🔩 Run without installation (Replit)
+
+[![Run on Repl.it](https://repl.it/badge/github/igorkowalczyk/active-dev)](https://repl.it/github/igorkowalczyk/active-dev)
+
+**Steps:**
+
+- Go to [this url](https://repl.it/github/igorkowalczyk/active-dev) and click `Import from GitHub`
+- Go to [Discord Developer Portal](https://discord.com/developers/applications) and create a new application
+- Go to `Bot` tab and create a new bot, then copy the token
+- Check if you enabled Community in your server
+- In Replit click `Run` button and wait for the app to start
+- Follow the instructions in the CLI and you're done!
+
+## 🔩 Installation (Windows)
 
 - Download the latest version of Node.js from [here](https://nodejs.org/en/download/) and install it
 - Clone this repository ([Download](https://github.com/IgorKowalczyk/active-dev/archive/refs/heads/main.zip))
