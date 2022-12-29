@@ -3,5 +3,6 @@
  "extends": ["config:base"],
  "dependencyDashboard": false,
  "ignorePaths": ["**/node_modules/**"],
- "labels": ["dependencies"]
+ "labels": ["dependencies"],
+ "reviewers": ["igorkowalczyk"]
 }
