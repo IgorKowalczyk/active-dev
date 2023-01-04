@@ -39,6 +39,15 @@
 - Paste the token when asked and press enter
 - Follow the instructions in the CLI and you're done!
 
+## 📹 Video tutorial
+
+https://user-images.githubusercontent.com/49127376/210598199-48529c34-d783-4d6c-bb56-5bfb7a1a8219.mp4
+
+> **Note**:
+> The bot token shown in the video has already been removed
+
+
+
 ## ⁉️ Issues
 
 If you have any issues with the page please create [new issue here](https://github.com/igorkowalczyk/active-dev/issues)
