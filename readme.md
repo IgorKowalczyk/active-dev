@@ -46,8 +46,6 @@ https://user-images.githubusercontent.com/49127376/210598199-48529c34-d783-4d6c-
 > **Note**:
 > The bot token shown in the video has already been removed
 
-
-
 ## ⁉️ Issues
 
 If you have any issues with the page please create [new issue here](https://github.com/igorkowalczyk/active-dev/issues)
