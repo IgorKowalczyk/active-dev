@@ -36,6 +36,6 @@
  },
  "packageManager": "pnpm@7.22.0",
  "devDependencies": {
-  "prettier": "2.8.1"
+  "prettier": "2.8.2"
  }
 }
