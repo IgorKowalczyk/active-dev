@@ -34,7 +34,7 @@
   "ora": "6.1.2",
   "prompts": "2.4.2"
  },
- "packageManager": "pnpm@7.23.0",
+ "packageManager": "pnpm@7.24.2",
  "devDependencies": {
   "prettier": "2.8.2"
  }
