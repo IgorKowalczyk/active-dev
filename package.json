@@ -1,41 +1,44 @@
 {
- "name": "active-dev",
- "version": "1.0.1",
- "description": "🛡️ Node.js app to get active developer badge on Discord",
- "main": "index.js",
- "type": "module",
- "scripts": {
-  "start": "node index.js",
-  "format": "prettier --write . --ignore-unknown",
-  "format:check": "prettier --check . --ignore-unknown"
- },
- "repository": {
-  "type": "git",
-  "url": "git+https://github.com/IgorKowalczyk/active-dev.git"
- },
- "keywords": [
-  "nodejs",
-  "discord",
-  "discord-badge",
-  "active-developer",
-  "active-developer-badge"
- ],
- "author": "Igor Kowalczyk",
- "license": "MIT",
- "bugs": {
-  "url": "https://github.com/IgorKowalczyk/active-dev/issues"
- },
- "homepage": "https://github.com/IgorKowalczyk/active-dev#readme",
- "dependencies": {
-  "chalk": "5.2.0",
-  "discord.js": "14.7.1",
-  "dotenv": "16.0.3",
-  "node-fetch": "3.3.0",
-  "ora": "6.1.2",
-  "prompts": "2.4.2"
- },
- "packageManager": "pnpm@7.25.1",
- "devDependencies": {
-  "prettier": "2.8.3"
- }
+  "name": "active-dev",
+  "version": "1.0.2",
+  "description": "🛡️ Node.js app to get active developer badge on Discord",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "format": "prettier --write . --ignore-unknown",
+    "format:check": "prettier --check . --ignore-unknown",
+    "lint": "eslint . --ext .js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgorKowalczyk/active-dev.git"
+  },
+  "keywords": [
+    "nodejs",
+    "discord",
+    "discord-badge",
+    "active-developer",
+    "active-developer-badge"
+  ],
+  "author": "Igor Kowalczyk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IgorKowalczyk/active-dev/issues"
+  },
+  "homepage": "https://github.com/IgorKowalczyk/active-dev#readme",
+  "dependencies": {
+    "chalk": "5.2.0",
+    "discord.js": "14.7.1",
+    "dotenv": "16.0.3",
+    "node-fetch": "3.3.0",
+    "ora": "6.1.2",
+    "prompts": "2.4.2"
+  },
+  "packageManager": "pnpm@7.25.1",
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "prettier": "2.8.3"
+  }
 }
