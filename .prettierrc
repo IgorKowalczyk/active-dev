@@ -3,7 +3,6 @@
  "bracketSpacing": true,
  "embeddedLanguageFormatting": "auto",
  "htmlWhitespaceSensitivity": "css",
- "jsxSingleQuote": false,
  "printWidth": 200000,
  "proseWrap": "preserve",
  "quoteProps": "as-needed",
