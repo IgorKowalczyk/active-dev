@@ -8,7 +8,7 @@ specifiers:
   eslint-config-prettier: ^8.6.0
   node-fetch: 3.3.0
   ora: 6.1.2
-  prettier: 2.8.3
+  prettier: 2.8.4
   prompts: 2.4.2
 
 dependencies:
@@ -22,7 +22,7 @@ dependencies:
 devDependencies:
   eslint: 8.32.0
   eslint-config-prettier: 8.6.0_eslint@8.32.0
-  prettier: 2.8.3
+  prettier: 2.8.4
 
 packages:
 
@@ -826,8 +826,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier/2.8.3:
-    resolution: {integrity: sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==}
+  /prettier/2.8.4:
+    resolution: {integrity: sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
