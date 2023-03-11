@@ -31,7 +31,7 @@
     "chalk": "5.2.0",
     "discord.js": "14.7.1",
     "dotenv": "16.0.3",
-    "node-fetch": "3.3.0",
+    "node-fetch": "3.3.1",
     "ora": "6.1.2",
     "prompts": "2.4.2"
   },

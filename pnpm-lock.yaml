@@ -6,7 +6,7 @@ specifiers:
   dotenv: 16.0.3
   eslint: ^8.32.0
   eslint-config-prettier: ^8.6.0
-  node-fetch: 3.3.0
+  node-fetch: 3.3.1
   ora: 6.1.2
   prettier: 2.8.4
   prompts: 2.4.2
@@ -15,7 +15,7 @@ dependencies:
   chalk: 5.2.0
   discord.js: 14.7.1
   dotenv: 16.0.3
-  node-fetch: 3.3.0
+  node-fetch: 3.3.1
   ora: 6.1.2
   prompts: 2.4.2
 
@@ -731,8 +731,8 @@ packages:
     engines: {node: '>=10.5.0'}
     dev: false
 
-  /node-fetch/3.3.0:
-    resolution: {integrity: sha512-BKwRP/O0UvoMKp7GNdwPlObhYGB5DQqwhEDQlNKuoqwVYSxkSZCSbHjnFFmUEtwSKRPU4kNK8PbDYYitwaE3QA==}
+  /node-fetch/3.3.1:
+    resolution: {integrity: sha512-cRVc/kyto/7E5shrWca1Wsea4y6tL9iYJE5FBCius3JQfb/4P4I295PfhgbJQBLTx6lATE4z+wK0rPM4VS2uow==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       data-uri-to-buffer: 4.0.0
