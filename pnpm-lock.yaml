@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@igorkowalczyk/eslint-config': 1.0.0
-  '@igorkowalczyk/prettier-config': 1.0.0
+  '@igorkowalczyk/prettier-config': 1.0.2
   chalk: 5.2.0
   discord.js: 14.7.1
   dotenv: 16.0.3
@@ -22,7 +22,7 @@ dependencies:
 
 devDependencies:
   '@igorkowalczyk/eslint-config': 1.0.0_prettier@2.8.4
-  '@igorkowalczyk/prettier-config': 1.0.0
+  '@igorkowalczyk/prettier-config': 1.0.2
   eslint: 8.36.0
   prettier: 2.8.4
 
@@ -136,8 +136,8 @@ packages:
       - supports-color
     dev: true
 
-  /@igorkowalczyk/prettier-config/1.0.0:
-    resolution: {integrity: sha512-VMSmH7wQC5UlgfkOYnFQGLVNyWKAUvLkRWRaAC0S17M4LyW6OHgLQRDs3fhrqRZie/x2bl55wIWlLU9lCOm31Q==}
+  /@igorkowalczyk/prettier-config/1.0.2:
+    resolution: {integrity: sha512-4c8td18eeHb99x3HouvPb911hnyZGvxOI+8h+DGCPA4uUbW9+r2doXH9epNHhDbjgnmmThZjiLrzMaCZ8IHIBA==}
     dependencies:
       prettier: 2.8.4
     dev: true
