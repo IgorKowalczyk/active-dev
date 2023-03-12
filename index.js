@@ -1,9 +1,9 @@
-import { Client, EmbedBuilder } from "discord.js";
-import prompts from "prompts";
-import * as dotenv from "dotenv";
 import chalk from "chalk";
+import { Client, EmbedBuilder } from "discord.js";
+import * as dotenv from "dotenv";
 import fetch from "node-fetch";
 import ora from "ora";
+import prompts from "prompts";
 dotenv.config();
 
 console.log(chalk.bold.green("Discord Active Developer Badge"));
