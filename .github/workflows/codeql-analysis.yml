@@ -1,6 +1,6 @@
 name: "CodeQL Checks"
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
  analyze:
