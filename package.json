@@ -41,6 +41,6 @@
     "@igorkowalczyk/eslint-config": "1.0.3",
     "@igorkowalczyk/prettier-config": "1.0.3",
     "eslint": "8.36.0",
-    "prettier": "2.8.6"
+    "prettier": "2.8.7"
   }
 }
