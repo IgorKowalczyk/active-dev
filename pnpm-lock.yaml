@@ -8,7 +8,7 @@ specifiers:
   dotenv: 16.0.3
   eslint: 8.36.0
   node-fetch: 3.3.1
-  ora: 6.2.0
+  ora: 6.3.0
   prettier: 2.8.7
   prompts: 2.4.2
 
@@ -17,7 +17,7 @@ dependencies:
   discord.js: 14.8.0
   dotenv: 16.0.3
   node-fetch: 3.3.1
-  ora: 6.2.0
+  ora: 6.3.0
   prompts: 2.4.2
 
 devDependencies:
@@ -1262,8 +1262,8 @@ packages:
       word-wrap: 1.2.3
     dev: true
 
-  /ora/6.2.0:
-    resolution: {integrity: sha512-c1qb/1rdE+EFDYiLXh10VY459uMh7DN9zlgd8mZJLoeiPpYllN8eAOiih2Rkah5ywxRm5tHN5C9zPheDq8d1MA==}
+  /ora/6.3.0:
+    resolution: {integrity: sha512-1/D8uRFY0ay2kgBpmAwmSA404w4OoPVhHMqRqtjvrcK/dnzcEZxMJ+V4DUbyICu8IIVRclHcOf5wlD1tMY4GUQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       chalk: 5.2.0
