@@ -38,7 +38,7 @@
   },
   "packageManager": "pnpm@8.0.0",
   "devDependencies": {
-    "@igorkowalczyk/eslint-config": "1.0.3",
+    "@igorkowalczyk/eslint-config": "1.1.0",
     "@igorkowalczyk/prettier-config": "1.1.0",
     "eslint": "8.37.0",
     "prettier": "2.8.7"
