@@ -14,8 +14,8 @@ dependencies:
     specifier: 3.3.1
     version: 3.3.1
   ora:
-    specifier: 6.3.0
-    version: 6.3.0
+    specifier: 6.3.1
+    version: 6.3.1
   prompts:
     specifier: 2.4.2
     version: 2.4.2
@@ -1294,8 +1294,8 @@ packages:
       word-wrap: 1.2.3
     dev: true
 
-  /ora@6.3.0:
-    resolution: {integrity: sha512-1/D8uRFY0ay2kgBpmAwmSA404w4OoPVhHMqRqtjvrcK/dnzcEZxMJ+V4DUbyICu8IIVRclHcOf5wlD1tMY4GUQ==}
+  /ora@6.3.1:
+    resolution: {integrity: sha512-ERAyNnZOfqM+Ao3RAvIXkYh5joP220yf59gVe2X/cI6SiCxIdi4c9HZKZD8R6q/RDXEje1THBju6iExiSsgJaQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       chalk: 5.2.0
