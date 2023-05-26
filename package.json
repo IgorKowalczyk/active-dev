@@ -2,7 +2,7 @@
   "name": "active-dev",
   "version": "1.0.2",
   "description": "🛡️ Node.js app to get active developer badge on Discord",
-  "main": "index.js",
+  "exports": null,  
   "type": "module",
   "scripts": {
     "start": "node index.js",
