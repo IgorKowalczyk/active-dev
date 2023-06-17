@@ -12,8 +12,8 @@ dependencies:
     specifier: 14.11.0
     version: 14.11.0
   dotenv:
-    specifier: 16.2.0
-    version: 16.2.0
+    specifier: 16.3.0
+    version: 16.3.0
   node-fetch:
     specifier: 3.3.1
     version: 3.3.1
@@ -516,8 +516,8 @@ packages:
       esutils: 2.0.3
     dev: true
 
-  /dotenv@16.2.0:
-    resolution: {integrity: sha512-jcq2vR1DY1+QA+vH58RIrWLDZOifTGmyQJWzP9arDUbgZcySdzuBb1WvhWZzZtiXgfm+GW2pjBqStqlfpzq7wQ==}
+  /dotenv@16.3.0:
+    resolution: {integrity: sha512-tHB+hmf8MRCkT3VVivGiG8kq9HiGTmQ3FzOKgztfpJQH1IWuZTOvKSJmHNnQPowecAmkCJhLrxdPhOr06LLqIQ==}
     engines: {node: '>=12'}
     dev: false
 
