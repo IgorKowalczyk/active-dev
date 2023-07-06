@@ -2,7 +2,7 @@
   "name": "active-dev",
   "version": "1.0.2",
   "description": "🛡️ Node.js app to get active developer badge on Discord",
-  "exports": null,  
+  "exports": null,
   "type": "module",
   "scripts": {
     "start": "node index.js",
@@ -38,8 +38,8 @@
   },
   "packageManager": "pnpm@8.6.6",
   "devDependencies": {
-    "@igorkowalczyk/eslint-config": "1.4.2",
-    "@igorkowalczyk/prettier-config": "1.4.2",
+    "@igorkowalczyk/eslint-config": "1.5.2",
+    "@igorkowalczyk/prettier-config": "1.5.2",
     "eslint": "8.44.0",
     "prettier": "3.0.0"
   }
