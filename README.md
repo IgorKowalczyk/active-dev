@@ -42,7 +42,7 @@
 
 https://user-images.githubusercontent.com/49127376/210598199-48529c34-d783-4d6c-bb56-5bfb7a1a8219.mp4
 
-> **Note**:
+> [!NOTE]
 > The bot token shown in the video has already been removed
 
 ## ⁉️ Issues
