@@ -1,13 +1,16 @@
-<img width="170" height="170" align="left" style="float: left; margin: 0 10px 0 0; border-radius: 50%;" src="https://cdn.discordapp.com/emojis/1040325165512396830.webp?size=2048&quality=lossless">
+![Active Developer](https://github.com/IgorKowalczyk/active-dev/assets/49127376/17770e3d-dd86-4044-9969-7adcfc3ebff3)
 
-## Active Developer Badge
-
-> Node.js app to get active developer badge on Discord
-
-[![GitHub License](https://img.shields.io/github/license/igorkowalczyk/blog?color=%2334D058&logo=github&style=flat-square&label=License)](https://github.com/igorkowalczyk/active-dev/blob/master/license.md)
-[![Version](https://img.shields.io/github/v/release/igorkowalczyk/active-dev?color=%2334D058&logo=github&style=flat-square&label=Version)](https://github.com/igorkowalczyk/active-dev/releases)
-[![Discord](https://img.shields.io/discord/666599184844980224?color=%2334D058&logo=discord&style=flat-square&logoColor=fff&label=Discord)](https://igorkowalczyk.dev/discord)
-<br><br><br>
+<div align="center">
+  <a aria-label="GitHub License" href="https://github.com/igorkowalczyk/active-dev/blob/master/license.md">
+    <img src="https://img.shields.io/github/license/igorkowalczyk/blog?color=%2334D058&logo=github&style=flat-square&label=License">
+  </a>
+  <a aria-label="Version" href="https://github.com/igorkowalczyk/active-dev/releases">
+    <img src="https://img.shields.io/github/v/release/igorkowalczyk/active-dev?color=%2334D058&logo=github&style=flat-square&label=Version">
+  </a>
+  <a aria-label="Discord" href="https://igorkowalczyk.dev/discord">
+    <img src="https://img.shields.io/discord/666599184844980224?color=%2334D058&logo=discord&style=flat-square&logoColor=fff&label=Discord">
+  </a>
+</div>
 
 ---
 
