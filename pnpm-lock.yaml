@@ -29,8 +29,8 @@ devDependencies:
     specifier: 2.0.3
     version: 2.0.3(eslint@8.52.0)(prettier@3.0.3)
   '@igorkowalczyk/prettier-config':
-    specifier: 2.0.2
-    version: 2.0.2(prettier@3.0.3)
+    specifier: 2.0.3
+    version: 2.0.3(prettier@3.0.3)
   eslint:
     specifier: 8.52.0
     version: 8.52.0
@@ -185,8 +185,8 @@ packages:
       - supports-color
     dev: true
 
-  /@igorkowalczyk/prettier-config@2.0.2(prettier@3.0.3):
-    resolution: {integrity: sha512-LHP1AKfR4obsiSB39aJJD4IElRaJFSsl/kTuT2pAaAqPa8tiqNwUWYxoIAL06/TrOD2fmXICfSPKGddJ0zJx8g==}
+  /@igorkowalczyk/prettier-config@2.0.3(prettier@3.0.3):
+    resolution: {integrity: sha512-WIGJG2XcPQD5EzF5R16/t/NUhk+59iDZoOfpUnM0jllBm3bFU/aT4LIIbXmwrNDvTSMh+p8I+CYPb+dlWD4MmQ==}
     peerDependencies:
       prettier: ^3.0
     dependencies:

@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "@igorkowalczyk/eslint-config": "2.0.3",
-    "@igorkowalczyk/prettier-config": "2.0.2",
+    "@igorkowalczyk/prettier-config": "2.0.3",
     "eslint": "8.52.0",
     "prettier": "3.0.3"
   },
