@@ -8,7 +8,7 @@
     <img src="https://img.shields.io/github/v/release/igorkowalczyk/active-dev?color=%2334D058&logo=github&style=flat-square&label=Version">
   </a>
   <a aria-label="Discord" href="https://igorkowalczyk.dev/discord">
-    <img src="https://img.shields.io/discord/666599184844980224?color=%2334D058&logo=discord&style=flat-square&logoColor=fff&label=Discord">
+    <img src="https://img.shields.io/discord/695282860399001640?color=%2334D058&logo=discord&style=flat-square&logoColor=fff&label=Discord">
   </a>
 </div>
 
