@@ -30,7 +30,7 @@
   "homepage": "https://github.com/IgorKowalczyk/active-dev#readme",
   "dependencies": {
     "chalk": "5.3.0",
-    "discord.js": "14.13.0",
+    "discord.js": "14.14.1",
     "dotenv": "16.3.1",
     "node-fetch": "3.3.2",
     "ora": "7.0.1",
