@@ -42,5 +42,5 @@
     "eslint": "8.53.0",
     "prettier": "3.0.3"
   },
-  "packageManager": "pnpm@8.10.2"
+  "packageManager": "pnpm@8.10.3"
 }
