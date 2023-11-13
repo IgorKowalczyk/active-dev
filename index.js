@@ -1,18 +1,17 @@
 import chalk from "chalk";
 import { Client, EmbedBuilder } from "discord.js";
-import * as dotenv from "dotenv";
 import fetch from "node-fetch";
 import ora from "ora";
 import prompts from "prompts";
-dotenv.config();
 
 console.log(chalk.bold.green("Discord Active Developer Badge"));
 console.log(chalk.bold(chalk.red("Remember to do not share your Discord Bot token with anyone!\n")));
 
 console.log(chalk.bold("This tool will help you to get the " + chalk.cyan.underline("Discord Active Developer Badge")));
-console.log(chalk.bold("If you have any problem, please contact me on Discord: " + chalk.cyan.underline("Majonez.exe#2495\n")));
+console.log(chalk.bold("If you have any problem, please contact me on Discord: " + chalk.cyan.underline("majonez.exe") + "\n"));
 
 export async function checkToken(value) {
+ if (!value) return false;
  const res = await fetch("https://discord.com/api/v10/users/@me", {
   method: "GET",
   headers: {
@@ -23,13 +22,10 @@ export async function checkToken(value) {
 }
 
 const community = await prompts({
- type: "select",
+ type: "confirm",
  name: "value",
  message: "You created new Discord Server and enabled Community in Server Settings?",
- choices: [
-  { title: "Yes", value: true },
-  { title: "No", value: false },
- ],
+ initial: true,
 });
 
 if (!community.value) {
@@ -37,14 +33,22 @@ if (!community.value) {
  process.exit(0);
 }
 
-const token = await prompts({
+const tokenPrompt = await prompts({
  type: "password",
  name: "token",
  message: "Enter your Discord Bot token",
- validate: (value) => {
-  return checkToken(value);
+ validate: async (value) => {
+  const valid = await checkToken(value);
+  return valid ? true : "Invalid Discord Bot token!";
  },
 });
+
+const valid = await checkToken(tokenPrompt.token);
+
+if (!valid) {
+ console.log(chalk.bold.red("✖ Invalid Discord Bot token!"));
+ process.exit(0);
+}
 
 console.log();
 const spinner = ora(chalk.bold("Running Discord Bot")).start();
@@ -54,16 +58,19 @@ const client = new Client({
 });
 
 try {
- client.login(token.token);
+ client.login(tokenPrompt.token);
 } catch (e) {
- console.log(e);
+ spinner.fail(chalk.bold("Error while logging in to Discord! GG, You broke Discord!"));
+ process.exit(0);
 }
 
 const slashSpinner = ora(chalk.bold("Creating slash command interaction..."));
+
 client.on("ready", async (client) => {
  spinner.succeed(chalk.bold(`Logged in as ${chalk.cyan.underline(client.user.tag)}!`));
  console.log(chalk.bold.green("✔") + chalk.bold(" Use this link to add your bot to your server: " + chalk.cyan.italic.underline(`https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&scope=applications.commands%20bot\n`)));
  slashSpinner.start();
+
  await client.application?.commands.set([
   {
    name: "active",
@@ -77,8 +84,20 @@ client.on("ready", async (client) => {
 
 client.on("interactionCreate", async (interaction) => {
  if (!interaction.isCommand()) return;
+
  if (interaction.commandName === "active") {
-  const embed = new EmbedBuilder().setAuthor({ name: "Discord Active Developer Badge", iconURL: "https://cdn.discordapp.com/emojis/1040325165512396830.webp?size=64&quality=lossless" }).setTitle("You have successfully ran the slash command!").setColor("#34DB98").setDescription("- Go to *https://discord.com/developers/active-developer* and claim your badge\n - Verification can take up to 24 hours, so wait patiently until you get your badge").setFooter({ text: "Made by Majonez.exe#2495", iconURL: "https://cdn.discordapp.com/emojis/1040325165512396830.webp?size=64&quality=lossless" });
+  const embed = new EmbedBuilder() // prettier
+   .setAuthor({
+    name: "Discord Active Developer Badge",
+    iconURL: "https://cdn.discordapp.com/emojis/1040325165512396830.webp?size=64&quality=lossless",
+   })
+   .setTitle("You have successfully ran the slash command!")
+   .setColor("#34DB98")
+   .setDescription("- Go to *https://discord.com/developers/active-developer* and claim your badge\n - Verification can take up to 24 hours, so wait patiently until you get your badge")
+   .setFooter({
+    text: "Made by @majonez.exe",
+    iconURL: "https://cdn.discordapp.com/emojis/1040325165512396830.webp?size=64&quality=lossless",
+   });
   slashSpinner.succeed(chalk.bold("You have successfully ran the slash command! Follow the instructions in Discord Message that you received!"));
   await interaction.reply({ embeds: [embed], ephemeral: true });
  }
