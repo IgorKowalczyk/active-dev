@@ -23,11 +23,11 @@ dependencies:
 
 devDependencies:
   '@igorkowalczyk/eslint-config':
-    specifier: 2.0.3
-    version: 2.0.3(eslint@8.55.0)(prettier@3.1.0)
+    specifier: 2.1.0
+    version: 2.1.0(eslint@8.55.0)(prettier@3.1.0)
   '@igorkowalczyk/prettier-config':
-    specifier: 2.0.3
-    version: 2.0.3(prettier@3.1.0)
+    specifier: 2.1.0
+    version: 2.1.0(prettier@3.1.0)
   eslint:
     specifier: 8.55.0
     version: 8.55.0
@@ -142,11 +142,6 @@ packages:
       - supports-color
     dev: true
 
-  /@eslint/js@8.52.0:
-    resolution: {integrity: sha512-mjZVbpaeMZludF2fsWLD0Z9gCref1Tk4i9+wddjRvpUNqqcndPkBD09N/Mapey0b3jaXbLm2kICwFv2E64QinA==}
-    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
-    dev: true
-
   /@eslint/js@8.55.0:
     resolution: {integrity: sha512-qQfo2mxH5yVom1kacMtZZJFVdW+E70mqHMJvVg6WTLo+VBuQJ4TojZlfWBjK0ve5BdEeNAVxOsl/nvNMpJOaJA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
@@ -177,12 +172,12 @@ packages:
     resolution: {integrity: sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==}
     dev: true
 
-  /@igorkowalczyk/eslint-config@2.0.3(eslint@8.55.0)(prettier@3.1.0):
-    resolution: {integrity: sha512-ppFklAtj7TNGKZ5pQVjmsIu+dhHfnqaVGJgEs6gFhg2n3H5Z1y6YZADD4DQQEQJqDEZTrFp7LO4bBbOqqqL78g==}
+  /@igorkowalczyk/eslint-config@2.1.0(eslint@8.55.0)(prettier@3.1.0):
+    resolution: {integrity: sha512-dP5Kq3DqWEs6Q+JxmMoGX9fArDlggmTQsK7MWw9i5tJuqyzRi6eeZUyvRHkxENISuq1ylfMoVbjz/ur7iZIOYw==}
     peerDependencies:
       eslint: '>=8.0.0'
     dependencies:
-      '@eslint/js': 8.52.0
+      '@eslint/js': 8.55.0
       eslint: 8.55.0
       eslint-plugin-import: 2.29.0(eslint@8.55.0)
       eslint-plugin-prettier: 5.0.1(eslint@8.55.0)(prettier@3.1.0)
@@ -197,8 +192,8 @@ packages:
       - supports-color
     dev: true
 
-  /@igorkowalczyk/prettier-config@2.0.3(prettier@3.1.0):
-    resolution: {integrity: sha512-WIGJG2XcPQD5EzF5R16/t/NUhk+59iDZoOfpUnM0jllBm3bFU/aT4LIIbXmwrNDvTSMh+p8I+CYPb+dlWD4MmQ==}
+  /@igorkowalczyk/prettier-config@2.1.0(prettier@3.1.0):
+    resolution: {integrity: sha512-22IQi1AuysH/SdmJ6kywNTzPKmHxngZbxvo2XeL5YJzl5SHvUY3h4oLz4LKGa517HK5ZzsLYz52O6ML8wBnHQg==}
     peerDependencies:
       prettier: ^3.0
     dependencies:
@@ -235,7 +230,7 @@ packages:
       is-glob: 4.0.3
       open: 9.1.0
       picocolors: 1.0.0
-      tslib: 2.6.1
+      tslib: 2.6.2
     dev: true
 
   /@sapphire/async-queue@1.5.0:
@@ -448,7 +443,7 @@ packages:
   /call-bind@1.0.2:
     resolution: {integrity: sha512-7O+FbCihrB5WGbFYesctwmTKae6rOiIzmz1icreWJ+0aA7LJfuqhEso2T9ncpcFtzMQtzXf2QGGueWJGTYsqrA==}
     dependencies:
-      function-bind: 1.1.1
+      function-bind: 1.1.2
       get-intrinsic: 1.2.1
     dev: true
 
@@ -998,10 +993,6 @@ packages:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
     dev: true
 
-  /function-bind@1.1.1:
-    resolution: {integrity: sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==}
-    dev: true
-
   /function-bind@1.1.2:
     resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
     dev: true
@@ -1023,7 +1014,7 @@ packages:
   /get-intrinsic@1.2.1:
     resolution: {integrity: sha512-2DcsyfABl+gVHEfCOaTrWgyt+tb6MSEGmKq+kI5HwLbIYgjgmMcV8KQ41uaKz1xxUcn9tJtgFbQUEVcEbd0FYw==}
     dependencies:
-      function-bind: 1.1.1
+      function-bind: 1.1.2
       has: 1.0.3
       has-proto: 1.0.1
       has-symbols: 1.0.3
@@ -1127,7 +1118,7 @@ packages:
     resolution: {integrity: sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==}
     engines: {node: '>= 0.4.0'}
     dependencies:
-      function-bind: 1.1.1
+      function-bind: 1.1.2
     dev: true
 
   /hasown@2.0.0:
@@ -1908,7 +1899,7 @@ packages:
     engines: {node: ^14.18.0 || >=16.0.0}
     dependencies:
       '@pkgr/utils': 2.4.2
-      tslib: 2.6.1
+      tslib: 2.6.2
     dev: true
 
   /text-table@0.2.0:
@@ -1940,13 +1931,8 @@ packages:
       strip-bom: 3.0.0
     dev: true
 
-  /tslib@2.6.1:
-    resolution: {integrity: sha512-t0hLfiEKfMUoqhG+U1oid7Pva4bbDPHYfJNiB7BiIjRkj1pyC++4N3huJfqY6aRH6VTB0rvtzQwjM4K6qpfOig==}
-    dev: true
-
   /tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
-    dev: false
 
   /type-check@0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
