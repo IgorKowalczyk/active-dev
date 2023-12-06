@@ -23,8 +23,8 @@ dependencies:
 
 devDependencies:
   '@igorkowalczyk/eslint-config':
-    specifier: 2.1.0
-    version: 2.1.0(eslint@8.55.0)(prettier@3.1.0)
+    specifier: 2.2.0
+    version: 2.2.0(eslint@8.55.0)(prettier@3.1.0)
   '@igorkowalczyk/prettier-config':
     specifier: 2.1.0
     version: 2.1.0(prettier@3.1.0)
@@ -172,8 +172,8 @@ packages:
     resolution: {integrity: sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==}
     dev: true
 
-  /@igorkowalczyk/eslint-config@2.1.0(eslint@8.55.0)(prettier@3.1.0):
-    resolution: {integrity: sha512-dP5Kq3DqWEs6Q+JxmMoGX9fArDlggmTQsK7MWw9i5tJuqyzRi6eeZUyvRHkxENISuq1ylfMoVbjz/ur7iZIOYw==}
+  /@igorkowalczyk/eslint-config@2.2.0(eslint@8.55.0)(prettier@3.1.0):
+    resolution: {integrity: sha512-s4y/t4qLMQMQAo2GuBDRzmGXLNNTHInIAFWtB66wBFKXBMsxT0ntqbIyxfWbvOGNOrODZCO+jAbWX1rPCAYmww==}
     peerDependencies:
       eslint: '>=8.0.0'
     dependencies:
