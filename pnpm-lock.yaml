@@ -15,8 +15,8 @@ dependencies:
     specifier: 3.3.2
     version: 3.3.2
   ora:
-    specifier: 8.0.0
-    version: 8.0.0
+    specifier: 8.0.1
+    version: 8.0.1
   prompts:
     specifier: 2.4.2
     version: 2.4.2
@@ -1567,8 +1567,8 @@ packages:
       type-check: 0.4.0
     dev: true
 
-  /ora@8.0.0:
-    resolution: {integrity: sha512-RUI+M9AFI9f0h+iPBxBIok+tWHSQYiMpp+NCdEOPFWrSGxl+IIJ4iCiXetSEoiP0AnNv1EcER6l/7t4mfkZjew==}
+  /ora@8.0.1:
+    resolution: {integrity: sha512-ANIvzobt1rls2BDny5fWZ3ZVKyD6nscLvfFRpQgfWsythlcsVUC9kL0zq6j2Z5z9wwp1kd7wpsD/T9qNPVLCaQ==}
     engines: {node: '>=18'}
     dependencies:
       chalk: 5.3.0
@@ -1577,7 +1577,7 @@ packages:
       is-interactive: 2.0.0
       is-unicode-supported: 2.0.0
       log-symbols: 6.0.0
-      stdin-discarder: 0.2.0
+      stdin-discarder: 0.2.1
       string-width: 7.0.0
       strip-ansi: 7.1.0
     dev: false
@@ -1777,8 +1777,8 @@ packages:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
     dev: false
 
-  /stdin-discarder@0.2.0:
-    resolution: {integrity: sha512-ZWOBlQfhYyLvTDu8BneHv0UZA2FhNEIyiwrzMjWahPNzdCeLsfN0ScqTZoAXFeUEmx/X/sHd7SW3x7WBV+f51A==}
+  /stdin-discarder@0.2.1:
+    resolution: {integrity: sha512-wRXvkxiYhOAduH+LFL/Qpim5zIWKYH1yEGvU0W8PgmabrZZ29iC1LKS8i443SYct12oZmQH7nyEonKiV8RTIsg==}
     engines: {node: '>=18'}
     dev: false
 
