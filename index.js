@@ -12,6 +12,7 @@ console.log(chalk.bold("If you have any problem, please contact me on Discord: "
 
 export async function checkToken(value) {
  if (!value) return false;
+
  const res = await fetch("https://discord.com/api/v10/users/@me", {
   method: "GET",
   headers: {
