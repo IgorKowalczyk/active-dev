@@ -39,7 +39,7 @@
     "@igorkowalczyk/eslint-config": "2.2.0",
     "@igorkowalczyk/prettier-config": "2.2.0",
     "eslint": "8.56.0",
-    "prettier": "3.2.2"
+    "prettier": "3.2.4"
   },
   "packageManager": "pnpm@8.14.2"
 }
