@@ -40,8 +40,5 @@
     "@igorkowalczyk/prettier-config": "2.2.0",
     "eslint": "9.1.0",
     "prettier": "3.2.5"
-  },
-  "engines": {
-    "pnpm": "8 || 9"
   }
 }
