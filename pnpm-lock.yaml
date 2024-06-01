@@ -26,16 +26,16 @@ importers:
     devDependencies:
       '@igorkowalczyk/eslint-config':
         specifier: 2.2.0
-        version: 2.2.0(eslint@9.3.0)(prettier@3.2.5)
+        version: 2.2.0(eslint@9.3.0)(prettier@3.3.0)
       '@igorkowalczyk/prettier-config':
         specifier: 2.2.0
-        version: 2.2.0(prettier@3.2.5)
+        version: 2.2.0(prettier@3.3.0)
       eslint:
         specifier: 9.3.0
         version: 9.3.0
       prettier:
-        specifier: 3.2.5
-        version: 3.2.5
+        specifier: 3.3.0
+        version: 3.3.0
 
 packages:
 
@@ -881,8 +881,8 @@ packages:
     resolution: {integrity: sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w==}
     engines: {node: '>=6.0.0'}
 
-  prettier@3.2.5:
-    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
+  prettier@3.3.0:
+    resolution: {integrity: sha512-J9odKxERhCQ10OC2yb93583f6UnYutOeiV5i0zEDS7UGTdUt0u+y8erxl3lBKvwo/JHyyoEdXjwp4dke9oyZ/g==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -1185,12 +1185,12 @@ snapshots:
 
   '@humanwhocodes/retry@0.3.0': {}
 
-  '@igorkowalczyk/eslint-config@2.2.0(eslint@9.3.0)(prettier@3.2.5)':
+  '@igorkowalczyk/eslint-config@2.2.0(eslint@9.3.0)(prettier@3.3.0)':
     dependencies:
       '@eslint/js': 8.55.0
       eslint: 9.3.0
       eslint-plugin-import: 2.29.0(eslint@9.3.0)
-      eslint-plugin-prettier: 5.0.1(eslint@9.3.0)(prettier@3.2.5)
+      eslint-plugin-prettier: 5.0.1(eslint@9.3.0)(prettier@3.3.0)
       globals: 13.23.0
     transitivePeerDependencies:
       - '@types/eslint'
@@ -1201,9 +1201,9 @@ snapshots:
       - prettier
       - supports-color
 
-  '@igorkowalczyk/prettier-config@2.2.0(prettier@3.2.5)':
+  '@igorkowalczyk/prettier-config@2.2.0(prettier@3.3.0)':
     dependencies:
-      prettier: 3.2.5
+      prettier: 3.3.0
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -1528,10 +1528,10 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-plugin-prettier@5.0.1(eslint@9.3.0)(prettier@3.2.5):
+  eslint-plugin-prettier@5.0.1(eslint@9.3.0)(prettier@3.3.0):
     dependencies:
       eslint: 9.3.0
-      prettier: 3.2.5
+      prettier: 3.3.0
       prettier-linter-helpers: 1.0.0
       synckit: 0.8.5
 
@@ -2043,7 +2043,7 @@ snapshots:
     dependencies:
       fast-diff: 1.2.0
 
-  prettier@3.2.5: {}
+  prettier@3.3.0: {}
 
   prompts@2.4.2:
     dependencies:
