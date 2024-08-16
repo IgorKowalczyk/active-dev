@@ -10,7 +10,7 @@ console.log(chalk.bold(chalk.red("Remember to do not share your Discord Bot toke
 console.log(chalk.bold("This tool will help you to get the " + chalk.cyan.underline("Discord Active Developer Badge")));
 console.log(chalk.bold("If you have any problem, please contact me on Discord: " + chalk.cyan.underline("majonez.exe") + "\n"));
 
-export async function checkToken(value) {
+export async function checkToken(value: string): Promise<boolean> {
  if (!value) return false;
 
  const res = await fetch("https://discord.com/api/v10/users/@me", {
@@ -38,7 +38,7 @@ const tokenPrompt = await prompts({
  type: "password",
  name: "token",
  message: "Enter your Discord Bot token",
- validate: async (value) => {
+ validate: async (value: string) => {
   const valid = await checkToken(value);
   return valid ? true : "Invalid Discord Bot token!";
  },

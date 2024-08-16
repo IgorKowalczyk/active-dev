@@ -1,11 +1,11 @@
 {
   "name": "active-dev",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "🛡️ Node.js app to get active developer badge on Discord",
   "exports": null,
   "type": "module",
   "scripts": {
-    "start": "node index.js",
+    "start": "tsx index.ts",
     "format": "prettier . --write --cache --ignore-unknown",
     "format:check": "prettier . --check --cache --ignore-unknown",
     "lint": "eslint .",
@@ -38,7 +38,11 @@
   "devDependencies": {
     "@igorkowalczyk/eslint-config": "2.2.0",
     "@igorkowalczyk/prettier-config": "2.2.0",
+    "@types/node": "22.4.0",
+    "@types/prompts": "2.4.9",
     "eslint": "9.9.0",
-    "prettier": "3.3.3"
-  }
+    "prettier": "3.3.3",
+    "tsx": "4.17.0"
+  },
+  "packageManager": "pnpm@9.7.1"
 }
