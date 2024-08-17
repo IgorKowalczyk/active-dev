@@ -46,19 +46,19 @@
 https://user-images.githubusercontent.com/49127376/210598199-48529c34-d783-4d6c-bb56-5bfb7a1a8219.mp4
 
 > [!NOTE]
-> The bot token shown in the video has already been removed
+> The bot token shown in the video has already been removed so don't try to use it.
 
 ## ⁉️ Issues
 
-If you have any issues with the page please create [new issue here](https://github.com/igorkowalczyk/active-dev/issues)
+If you come across any errors or have suggestions for improvements, please create a [new issue here](https://github.com/igorkowalczyk/active-dev/issues) and describe it clearly.
 
 ## 📥 Pull Requests
 
-When submitting a pull request:
+When submitting a pull request, please follow these steps:
 
-- Clone the repo.
-- Create a branch off of master and give it a meaningful name (e.g. my-awesome-new-feature).
-- Open a [pull request](https://github.com/igorkowalczyk/active-dev/pulls) on [GitHub](https://github.com) and describe the feature or fix.
+- Clone [this repository](https://github.com/igorkowalczyk/active-dev) `https://github.com/IgorKowalczyk/active-dev.git`
+- Create a branch from `main` and give it a meaningful name (e.g. `my-awesome-new-feature`).
+- Open a [pull request](https://github.com/igorkowalczyk/active-dev/pulls) on [GitHub](https://github.com/) and clearly describe the feature or fix you are proposing.
 
 ## 📋 License
 
