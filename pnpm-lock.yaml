@@ -31,8 +31,8 @@ importers:
         specifier: 2.2.0
         version: 2.2.0(prettier@3.3.3)
       '@types/node':
-        specifier: 22.5.1
-        version: 22.5.1
+        specifier: 22.5.2
+        version: 22.5.2
       '@types/prompts':
         specifier: 2.4.9
         version: 2.4.9
@@ -303,8 +303,8 @@ packages:
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
 
-  '@types/node@22.5.1':
-    resolution: {integrity: sha512-KkHsxej0j9IW1KKOOAA/XBA0z08UFSrRQHErzEfA3Vgq57eXIMYboIlHJuYIfd+lwCQjtKqUu3UnmKbtUc9yRw==}
+  '@types/node@22.5.2':
+    resolution: {integrity: sha512-acJsPTEqYqulZS/Yp/S3GgeE6GZ0qYODUR8aVr/DkhHQ8l9nd4j5x1/ZJy9/gHrRlFMqkO6i0I3E27Alu4jjPg==}
 
   '@types/prompts@2.4.9':
     resolution: {integrity: sha512-qTxFi6Buiu8+50/+3DGIWLHM6QuWsEKugJnnP6iv2Mc4ncxE4A/OJkjuVOA+5X0X1S/nq5VJRa8Lu+nwcvbrKA==}
@@ -1507,18 +1507,18 @@ snapshots:
 
   '@types/json5@0.0.29': {}
 
-  '@types/node@22.5.1':
+  '@types/node@22.5.2':
     dependencies:
       undici-types: 6.19.6
 
   '@types/prompts@2.4.9':
     dependencies:
-      '@types/node': 22.5.1
+      '@types/node': 22.5.2
       kleur: 3.0.3
 
   '@types/ws@8.5.10':
     dependencies:
-      '@types/node': 22.5.1
+      '@types/node': 22.5.2
 
   '@vladfrangu/async_event_emitter@2.2.4': {}
 
