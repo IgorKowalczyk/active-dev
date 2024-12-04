@@ -26,10 +26,10 @@ importers:
     devDependencies:
       '@igorkowalczyk/eslint-config':
         specifier: 2.2.0
-        version: 2.2.0(eslint@9.16.0)(prettier@3.4.1)
+        version: 2.2.0(eslint@9.16.0)(prettier@3.4.2)
       '@igorkowalczyk/prettier-config':
         specifier: 2.2.0
-        version: 2.2.0(prettier@3.4.1)
+        version: 2.2.0(prettier@3.4.2)
       '@types/node':
         specifier: 22.10.1
         version: 22.10.1
@@ -40,8 +40,8 @@ importers:
         specifier: 9.16.0
         version: 9.16.0
       prettier:
-        specifier: 3.4.1
-        version: 3.4.1
+        specifier: 3.4.2
+        version: 3.4.2
       tsx:
         specifier: 4.19.2
         version: 4.19.2
@@ -1088,8 +1088,8 @@ packages:
     resolution: {integrity: sha512-GbK2cP9nraSSUF9N2XwUwqfzlAFlMNYYl+ShE/V+H8a9uNl/oUqB1w2EL54Jh0OlyRSd8RfWYJ3coVS4TROP2w==}
     engines: {node: '>=6.0.0'}
 
-  prettier@3.4.1:
-    resolution: {integrity: sha512-G+YdqtITVZmOJje6QkXQWzl3fSfMxFwm1tjTyo9exhkmWSqC4Yhd1+lug++IlR2mvRVAxEDDWYkQdeSztajqgg==}
+  prettier@3.4.2:
+    resolution: {integrity: sha512-e9MewbtFo+Fevyuxn/4rrcDAaq0IYxPGLvObpQjiZBMAzB9IGmzlnG9RZy3FFas+eBMu2vA0CszMeduow5dIuQ==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -1490,12 +1490,12 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.1': {}
 
-  '@igorkowalczyk/eslint-config@2.2.0(eslint@9.16.0)(prettier@3.4.1)':
+  '@igorkowalczyk/eslint-config@2.2.0(eslint@9.16.0)(prettier@3.4.2)':
     dependencies:
       '@eslint/js': 8.55.0
       eslint: 9.16.0
       eslint-plugin-import: 2.29.0(eslint@9.16.0)
-      eslint-plugin-prettier: 5.0.1(eslint@9.16.0)(prettier@3.4.1)
+      eslint-plugin-prettier: 5.0.1(eslint@9.16.0)(prettier@3.4.2)
       globals: 13.23.0
     transitivePeerDependencies:
       - '@types/eslint'
@@ -1506,9 +1506,9 @@ snapshots:
       - prettier
       - supports-color
 
-  '@igorkowalczyk/prettier-config@2.2.0(prettier@3.4.1)':
+  '@igorkowalczyk/prettier-config@2.2.0(prettier@3.4.2)':
     dependencies:
-      prettier: 3.4.1
+      prettier: 3.4.2
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -1873,10 +1873,10 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-plugin-prettier@5.0.1(eslint@9.16.0)(prettier@3.4.1):
+  eslint-plugin-prettier@5.0.1(eslint@9.16.0)(prettier@3.4.2):
     dependencies:
       eslint: 9.16.0
-      prettier: 3.4.1
+      prettier: 3.4.2
       prettier-linter-helpers: 1.0.0
       synckit: 0.8.5
 
@@ -2399,7 +2399,7 @@ snapshots:
     dependencies:
       fast-diff: 1.2.0
 
-  prettier@3.4.1: {}
+  prettier@3.4.2: {}
 
   prompts@2.4.2:
     dependencies:
