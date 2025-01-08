@@ -12,8 +12,8 @@ importers:
         specifier: 5.4.1
         version: 5.4.1
       discord.js:
-        specifier: 14.17.2
-        version: 14.17.2
+        specifier: 14.17.3
+        version: 14.17.3
       node-fetch:
         specifier: 3.3.2
         version: 3.3.2
@@ -499,8 +499,8 @@ packages:
   discord-api-types@0.37.114:
     resolution: {integrity: sha512-9b9oOpktWSmE6ooToc46wfw151SHC/+idmnZvtwpEzW85BijUspQxj4W2uOmo+nZVTdEyb3fku58k+4rHKpdSQ==}
 
-  discord.js@14.17.2:
-    resolution: {integrity: sha512-mrH6ziLVtNtId4bV4bsaUt5jE6NUaiHMPqO5VsSw1VVhFnjFi9duD8ctlo90/6cUH+8uyKBkoq9mSJ35SuuZ7Q==}
+  discord.js@14.17.3:
+    resolution: {integrity: sha512-8/j8udc3CU7dz3Eqch64UaSHoJtUT6IXK4da5ixjbav4NAXJicloWswD/iwn1ImZEMoAV3LscsdO0zhBh6H+0Q==}
     engines: {node: '>=18'}
 
   doctrine@2.1.0:
@@ -1527,7 +1527,7 @@ snapshots:
       is-glob: 4.0.3
       open: 9.1.0
       picocolors: 1.0.0
-      tslib: 2.6.2
+      tslib: 2.7.0
 
   '@sapphire/async-queue@1.5.3': {}
 
@@ -1720,7 +1720,7 @@ snapshots:
 
   discord-api-types@0.37.114: {}
 
-  discord.js@14.17.2:
+  discord.js@14.17.3:
     dependencies:
       '@discordjs/builders': 1.10.0
       '@discordjs/collection': 1.5.3
