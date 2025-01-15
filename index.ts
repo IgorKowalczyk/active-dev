@@ -31,6 +31,7 @@ const community = await prompts({
 
 if (!community.value) {
  console.log(chalk.bold.red("✖ You need to create new Discord Server and enable Community in Server Settings!"));
+ /* eslint-disable-next-line node/no-process-exit */
  process.exit(0);
 }
 
@@ -48,6 +49,7 @@ const valid = await checkToken(tokenPrompt.token);
 
 if (!valid) {
  console.log(chalk.bold.red("✖ Invalid Discord Bot token!"));
+ /* eslint-disable-next-line node/no-process-exit */
  process.exit(0);
 }
 
@@ -60,8 +62,9 @@ const client = new Client({
 
 try {
  client.login(tokenPrompt.token);
-} catch (e) {
+} catch (_e) {
  spinner.fail(chalk.bold("Error while logging in to Discord! GG, You broke Discord!"));
+ /* eslint-disable-next-line node/no-process-exit */
  process.exit(0);
 }
 
