@@ -1,3 +1,9 @@
-import eslintConfig from "@igorkowalczyk/eslint-config/flat";
+import eslintConfig from "@igorkowalczyk/eslint-config";
 
-export default [...eslintConfig];
+export default [
+ // prettier
+ ...eslintConfig.base,
+ ...eslintConfig.node,
+ ...eslintConfig.typescript,
+ ...eslintConfig.prettier,
+];
