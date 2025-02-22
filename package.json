@@ -41,7 +41,7 @@
     "@types/node": "22.13.4",
     "@types/prompts": "2.4.9",
     "eslint": "9.20.1",
-    "prettier": "3.5.1",
+    "prettier": "3.5.2",
     "tsx": "4.19.3"
   },
   "packageManager": "pnpm@10.4.1"
