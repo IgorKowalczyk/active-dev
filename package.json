@@ -36,13 +36,18 @@
     "prompts": "2.4.2"
   },
   "devDependencies": {
-    "@igorkowalczyk/eslint-config": "3.0.2",
-    "@igorkowalczyk/prettier-config": "3.0.2",
+    "@igorkowalczyk/eslint-config": "3.0.7",
+    "@igorkowalczyk/prettier-config": "3.0.7",
     "@types/node": "22.13.9",
     "@types/prompts": "2.4.9",
     "eslint": "9.21.0",
     "prettier": "3.5.3",
     "tsx": "4.19.3"
   },
-  "packageManager": "pnpm@10.6.1"
+  "packageManager": "pnpm@10.6.1",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
 }
