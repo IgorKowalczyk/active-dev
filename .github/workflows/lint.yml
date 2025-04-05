@@ -14,7 +14,7 @@ jobs:
    - name: 🧱 Checkout repository
      uses: actions/checkout@v4
    - name: 🔩 Setup PNPM
-     uses: pnpm/action-setup@v3
+     uses: pnpm/action-setup@v4
      with:
       standalone: true
    - name: 🔩 Setup Node ${{ matrix.node }}
