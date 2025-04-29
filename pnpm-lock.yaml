@@ -12,8 +12,8 @@ importers:
         specifier: 5.4.1
         version: 5.4.1
       discord.js:
-        specifier: 14.19.1
-        version: 14.19.1
+        specifier: 14.19.2
+        version: 14.19.2
       node-fetch:
         specifier: 3.3.2
         version: 3.3.2
@@ -753,8 +753,8 @@ packages:
   discord-api-types@0.38.1:
     resolution: {integrity: sha512-vsjsqjAuxsPhiwbPjTBeGQaDPlizFmSkU0mTzFGMgRxqCDIRBR7iTY74HacpzrDV0QtERHRKQEk1tq7drZUtHg==}
 
-  discord.js@14.19.1:
-    resolution: {integrity: sha512-r5jsPyaeoCrRGbdse4vQNbHAsoc2zuueyiTFJ2Ce7BiaJak9OldzKZWaWGwKdCFDH3zXlthU1hHXkx1EswKZCA==}
+  discord.js@14.19.2:
+    resolution: {integrity: sha512-L/ivhVefzzRcChHJSaGYsgA4Uqx6or2sst5JZ/ft9OBwrj8OJIzrrcutlkHnm/hlI0Hrm3es62TRVksU8VUqrg==}
     engines: {node: '>=18'}
 
   dunder-proto@1.0.1:
@@ -2514,7 +2514,7 @@ snapshots:
 
   discord-api-types@0.38.1: {}
 
-  discord.js@14.19.1:
+  discord.js@14.19.2:
     dependencies:
       '@discordjs/builders': 1.11.1
       '@discordjs/collection': 1.5.3
