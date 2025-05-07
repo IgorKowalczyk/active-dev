@@ -31,8 +31,8 @@ importers:
         specifier: 3.0.8
         version: 3.0.8(prettier@3.5.3)
       '@types/node':
-        specifier: 22.15.12
-        version: 22.15.12
+        specifier: 22.15.14
+        version: 22.15.14
       '@types/prompts':
         specifier: 2.4.9
         version: 2.4.9
@@ -409,8 +409,8 @@ packages:
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
-  '@types/node@22.15.12':
-    resolution: {integrity: sha512-K0fpC/ZVeb8G9rm7bH7vI0KAec4XHEhBam616nVJCV51bKzJ6oA3luG4WdKoaztxe70QaNjS/xBmcDLmr4PiGw==}
+  '@types/node@22.15.14':
+    resolution: {integrity: sha512-BL1eyu/XWsFGTtDWOYULQEs4KR0qdtYfCxYAUYRoB7JP7h9ETYLgQTww6kH8Sj2C0pFGgrpM0XKv6/kbIzYJ1g==}
 
   '@types/prompts@2.4.9':
     resolution: {integrity: sha512-qTxFi6Buiu8+50/+3DGIWLHM6QuWsEKugJnnP6iv2Mc4ncxE4A/OJkjuVOA+5X0X1S/nq5VJRa8Lu+nwcvbrKA==}
@@ -2387,18 +2387,18 @@ snapshots:
 
   '@types/json-schema@7.0.15': {}
 
-  '@types/node@22.15.12':
+  '@types/node@22.15.14':
     dependencies:
       undici-types: 6.21.0
 
   '@types/prompts@2.4.9':
     dependencies:
-      '@types/node': 22.15.12
+      '@types/node': 22.15.14
       kleur: 3.0.3
 
   '@types/ws@8.18.1':
     dependencies:
-      '@types/node': 22.15.12
+      '@types/node': 22.15.14
 
   '@typescript-eslint/eslint-plugin@8.31.0(@typescript-eslint/parser@8.31.0(eslint@9.26.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.26.0(jiti@2.4.2))(typescript@5.8.3)':
     dependencies:
