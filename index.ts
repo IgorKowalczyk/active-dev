@@ -72,7 +72,13 @@ const slashSpinner = ora(chalk.bold("Creating slash command interaction..."));
 
 client.on("ready", async (client) => {
  spinner.succeed(chalk.bold(`Logged in as ${chalk.cyan.underline(client.user.tag)}!`));
- console.log(chalk.bold.green("✔") + chalk.bold(" Use this link to add your bot to your server: " + chalk.cyan.italic.underline(`https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&scope=applications.commands%20bot\n`)));
+ console.log(
+  chalk.bold.green("✔") +
+   chalk.bold(
+    " Use this link to add your bot to your server: " +
+     chalk.cyan.italic.underline(`https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&scope=applications.commands%20bot\n`)
+   )
+ );
  slashSpinner.start();
 
  await client.application?.commands.set([
@@ -97,7 +103,9 @@ client.on("interactionCreate", async (interaction) => {
    })
    .setTitle("You have successfully ran the slash command!")
    .setColor("#34DB98")
-   .setDescription("- Go to *https://discord.com/developers/active-developer* and claim your badge\n - Verification can take up to 24 hours, so wait patiently until you get your badge")
+   .setDescription(
+    "- Go to *https://discord.com/developers/active-developer* and claim your badge\n - Verification can take up to 24 hours, so wait patiently until you get your badge"
+   )
    .setFooter({
     text: "Made by @majonez.exe",
     iconURL: "https://cdn.discordapp.com/emojis/1040325165512396830.webp?size=64&quality=lossless",

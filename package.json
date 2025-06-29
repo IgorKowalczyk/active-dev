@@ -36,11 +36,11 @@
     "prompts": "2.4.2"
   },
   "devDependencies": {
-    "@igorkowalczyk/eslint-config": "3.0.8",
-    "@igorkowalczyk/prettier-config": "3.0.8",
-    "@types/node": "22.15.33",
+    "@igorkowalczyk/eslint-config": "3.1.0",
+    "@igorkowalczyk/prettier-config": "3.1.0",
+    "@types/node": "24.0.7",
     "@types/prompts": "2.4.9",
-    "eslint": "9.29.0",
+    "eslint": "9.30.0",
     "prettier": "3.6.2",
     "tsx": "4.20.3"
   },
