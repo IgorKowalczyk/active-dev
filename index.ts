@@ -1,5 +1,5 @@
 import chalk from "chalk";
-import { Client, EmbedBuilder } from "discord.js";
+import { Client, EmbedBuilder, IntentsBitField, MessageFlags, Events } from "discord.js";
 import fetch from "node-fetch";
 import ora from "ora";
 import prompts from "prompts";
@@ -38,7 +38,8 @@ if (!community.value) {
 const tokenPrompt = await prompts({
  type: "password",
  name: "token",
- message: "Enter your Discord Bot token",
+ message: "Enter your Discord Bot token (you can paste it by pressing Ctrl + Shift + V):",
+
  validate: async (value: string) => {
   const valid = await checkToken(value);
   return valid ? true : "Invalid Discord Bot token!";
@@ -57,7 +58,7 @@ console.log();
 const spinner = ora(chalk.bold("Running Discord Bot")).start();
 
 const client = new Client({
- intents: [],
+ intents: [IntentsBitField.Flags.Guilds],
 });
 
 try {
@@ -79,8 +80,6 @@ client.on("ready", async (client) => {
      chalk.cyan.italic.underline(`https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&scope=applications.commands%20bot\n`)
    )
  );
- slashSpinner.start();
-
  await client.application?.commands.set([
   {
    name: "active",
@@ -92,25 +91,39 @@ client.on("ready", async (client) => {
  slashSpinner.start();
 });
 
-client.on("interactionCreate", async (interaction) => {
- if (!interaction.isCommand()) return;
+client.on(Events.InteractionCreate, async (interaction) => {
+ try {
+  if (!interaction.isCommand()) return;
 
- if (interaction.commandName === "active") {
-  const embed = new EmbedBuilder() // prettier
-   .setAuthor({
-    name: "Discord Active Developer Badge",
-    iconURL: "https://cdn.discordapp.com/emojis/1040325165512396830.webp?size=64&quality=lossless",
-   })
-   .setTitle("You have successfully ran the slash command!")
-   .setColor("#34DB98")
-   .setDescription(
-    "- Go to *https://discord.com/developers/active-developer* and claim your badge\n - Verification can take up to 24 hours, so wait patiently until you get your badge"
-   )
-   .setFooter({
-    text: "Made by @majonez.exe",
-    iconURL: "https://cdn.discordapp.com/emojis/1040325165512396830.webp?size=64&quality=lossless",
-   });
-  slashSpinner.succeed(chalk.bold("You have successfully ran the slash command! Follow the instructions in Discord Message that you received!"));
-  await interaction.reply({ embeds: [embed], ephemeral: true });
+  if (interaction.commandName === "active") {
+   console.log(chalk.bold.green("Slash command interaction received!"));
+   const embed = new EmbedBuilder() // prettier
+    .setAuthor({
+     name: "Discord Active Developer Badge",
+     iconURL: "https://cdn.discordapp.com/emojis/1040325165512396830.webp?size=64&quality=lossless",
+    })
+    .setTitle("You have successfully ran the slash command!")
+    .setColor("#34DB98")
+    .setDescription(
+     "- Go to *https://discord.com/developers/active-developer* and claim your badge\n - Verification can take up to 24 hours, so wait patiently until you get your badge"
+    )
+    .setFooter({
+     text: "Made by @majonez.exe",
+     iconURL: "https://cdn.discordapp.com/emojis/1040325165512396830.webp?size=64&quality=lossless",
+    });
+   slashSpinner.succeed(
+    chalk.bold(
+     "You have successfully ran the slash command! Follow the instructions in Discord Message that you received!. Now you can close this application by pressing Ctrl + C"
+    )
+   );
+
+   await interaction.reply({ embeds: [embed], flags: MessageFlags.Ephemeral });
+  }
+ } catch {
+  slashSpinner.fail(
+   chalk.bold.red("Error while creating slash command interaction! This can sometimes happen, but don't worry - just kick your bot from the server and run this application again!")
+  );
+  /* eslint-disable-next-line node/no-process-exit */
+  process.exit(0);
  }
 });
