@@ -44,7 +44,7 @@
     "prettier": "3.6.2",
     "tsx": "4.20.5"
   },
-  "packageManager": "pnpm@10.15.0",
+  "packageManager": "pnpm@10.15.1",
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild",
