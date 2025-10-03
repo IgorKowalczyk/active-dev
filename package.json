@@ -42,7 +42,7 @@
     "@types/prompts": "2.4.9",
     "eslint": "9.35.0",
     "prettier": "3.6.2",
-    "tsx": "4.20.5"
+    "tsx": "4.20.6"
   },
   "packageManager": "pnpm@10.18.0",
   "pnpm": {
