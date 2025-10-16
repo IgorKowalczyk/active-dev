@@ -34,7 +34,7 @@ if (savedSettings.token && savedSettings.community) {
  const useSaved = await prompts({
   type: "confirm",
   name: "value",
-  message: "Remember settings? Use saved settings? (y/n)",
+  message: "Use saved settings? (y/n)",
   initial: true,
  });
  
