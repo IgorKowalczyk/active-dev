@@ -119,7 +119,7 @@ client.on("ready", async (client) => {
    description: "Get the Discord Active Developer Badge",
   },
  ]);
- slashSpinner.text = chalk.bold("Go to your Discord Server (where you added your bot) and use the slash command " + chalk.cyan.bold("/active"));
+ slashSpinner.text = chalk.bold("Go to your Discord Server (where you added your bot) and use the slash command " + chalk.cyan.bold("/active\n"));
  slashSpinner.start();
 });
 
