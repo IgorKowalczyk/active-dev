@@ -14,6 +14,9 @@ importers:
       discord.js:
         specifier: 14.23.2
         version: 14.23.2
+      dotenv:
+        specifier: 17.2.3
+        version: 17.2.3
       node-fetch:
         specifier: 3.3.2
         version: 3.3.2
@@ -830,6 +833,10 @@ packages:
   discord.js@14.23.2:
     resolution: {integrity: sha512-tU2NFr823X3TXEc8KyR/4m296KLxPai4nirN3q9kHCpY4TKj96n9lHZnyLzRNMui8EbL07jg9hgH2PWWfKMGIg==}
     engines: {node: '>=18'}
+
+  dotenv@17.2.3:
+    resolution: {integrity: sha512-JVUnt+DUIzu87TABbhPmNfVdBDt18BLOWjMUFJMSi/Qqg7NTYtabbvSNJGOJ7afbRuv9D/lngizHtP7QyLQ+9w==}
+    engines: {node: '>=12'}
 
   dunder-proto@1.0.1:
     resolution: {integrity: sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==}
@@ -2732,6 +2739,8 @@ snapshots:
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
+
+  dotenv@17.2.3: {}
 
   dunder-proto@1.0.1:
     dependencies:
