@@ -1,9 +1,13 @@
+/* eslint-disable node/no-process-exit */
+import fs from "node:fs";
 import chalk from "chalk";
 import { Client, EmbedBuilder, IntentsBitField, MessageFlags, Events } from "discord.js";
+import dotenv from "dotenv";
 import fetch from "node-fetch";
 import ora from "ora";
 import prompts from "prompts";
-import fs from "fs";
+
+dotenv.config();
 
 console.log(chalk.bold.green("Discord Active Developer Badge"));
 console.log(chalk.bold(chalk.red("Remember to do not share your Discord Bot token with anyone!\n")));
@@ -21,29 +25,34 @@ export async function checkToken(value: string): Promise<boolean> {
  return res.status !== 200 ? false : true;
 }
 
-let savedSettings: any = {};
-try {
- if (fs.existsSync("settings.json")) {
-  savedSettings = JSON.parse(fs.readFileSync("settings.json", "utf8"));
- }
-} catch {}
+function saveSettingsToEnv(token: string, community: boolean) {
+ const envContent = `DISCORD_TOKEN=${token}\nCOMMUNITY_ENABLED=${community}`;
+ fs.writeFileSync(".env", envContent);
+ console.log(chalk.bold.green("✔ Settings saved to .env file!"));
+}
 
 let community, tokenPrompt;
 
-if (savedSettings.token && savedSettings.community) {
+if (process.env.DISCORD_TOKEN && process.env.COMMUNITY_ENABLED) {
  const useSaved = await prompts({
   type: "confirm",
   name: "value",
-  message: "Use saved settings? (y/n)",
+  message: "Use saved settings?",
   initial: true,
  });
- 
+
  if (useSaved.value) {
-  community = { value: savedSettings.community };
-  tokenPrompt = { token: savedSettings.token };
-  console.log(chalk.bold.green("✔ Using saved settings..."));
+  community = { value: process.env.COMMUNITY_ENABLED === "true" };
+  tokenPrompt = { token: process.env.DISCORD_TOKEN };
+  console.log(chalk.bold.green("✔ Using saved settings from .env file!"));
+  const valid = await checkToken(tokenPrompt.token);
+  if (!valid) {
+   console.log(chalk.bold.red("✖ Invalid Discord Bot token in .env file!"));
+   process.exit(0);
+  }
  }
 }
+
 if (!tokenPrompt) {
  community = await prompts({
   type: "confirm",
@@ -81,11 +90,7 @@ if (!tokenPrompt) {
  });
 
  if (remember.value) {
-  fs.writeFileSync("settings.json", JSON.stringify({
-   token: tokenPrompt.token,
-   community: community.value
-  }));
-  console.log(chalk.bold.green("✔ Settings saved!"));
+  saveSettingsToEnv(tokenPrompt.token, community.value);
  }
 }
 
