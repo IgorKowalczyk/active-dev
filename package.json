@@ -30,19 +30,19 @@
   "homepage": "https://github.com/IgorKowalczyk/active-dev#readme",
   "dependencies": {
     "chalk": "5.6.2",
-    "discord.js": "14.22.1",
+    "discord.js": "14.23.2",
     "node-fetch": "3.3.2",
-    "ora": "8.2.0",
+    "ora": "9.0.0",
     "prompts": "2.4.2"
   },
   "devDependencies": {
     "@igorkowalczyk/eslint-config": "3.1.0",
     "@igorkowalczyk/prettier-config": "3.1.0",
-    "@types/node": "24.3.0",
+    "@types/node": "24.9.0",
     "@types/prompts": "2.4.9",
-    "eslint": "9.35.0",
+    "eslint": "9.38.0",
     "prettier": "3.6.2",
-    "tsx": "4.20.5"
+    "tsx": "4.20.6"
   },
   "packageManager": "pnpm@10.18.0",
   "pnpm": {
