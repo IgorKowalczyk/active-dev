@@ -3,26 +3,26 @@ name: Lint
 on: [push]
 
 jobs:
- lint:
-  name: ESLint
-  runs-on: ubuntu-latest
-  strategy:
-   fail-fast: false
-   matrix:
-    node: ["lts/*"]
-  steps:
-   - name: 🧱 Checkout repository
-     uses: actions/checkout@v5
-   - name: 🔩 Setup PNPM
-     uses: pnpm/action-setup@v4
-     with:
-      standalone: true
-   - name: 🔩 Setup Node ${{ matrix.node }}
-     uses: actions/setup-node@v6
-     with:
-      node-version: ${{ matrix.node }}
-      cache: "pnpm"
-   - name: 🚀 Install dependencies
-     run: pnpm install
-   - name: 🚀 Run ESLint
-     run: pnpm lint
+  lint:
+    name: ESLint
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node: ["lts/*"]
+    steps:
+      - name: 🧱 Checkout repository
+        uses: actions/checkout@v5
+      - name: 🔩 Setup PNPM
+        uses: pnpm/action-setup@v4
+        with:
+          standalone: true
+      - name: 🔩 Setup Node ${{ matrix.node }}
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ matrix.node }}
+          cache: "pnpm"
+      - name: 🚀 Install dependencies
+        run: pnpm install
+      - name: 🚀 Run ESLint
+        run: pnpm lint
