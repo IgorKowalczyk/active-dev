@@ -41,7 +41,7 @@
     "@igorkowalczyk/prettier-config": "3.2.1",
     "@types/node": "24.10.0",
     "@types/prompts": "2.4.9",
-    "eslint": "9.39.1",
+    "eslint": "9.39.2",
     "prettier": "3.6.2",
     "tsx": "4.20.6"
   },
